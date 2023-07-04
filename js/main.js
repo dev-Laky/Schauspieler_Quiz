@@ -43,7 +43,7 @@
         currentQuestionIndex = 0;
         score = 0;
         nextDiv.classList.add('d-none');
-        showQuestion(0);
+        showQuestion();
     }
 
     function showQuestion() {
