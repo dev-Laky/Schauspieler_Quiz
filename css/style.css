@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+.container {
+    height: 100%;
+}
+
+.badge-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+h1 {
+    font-size: 30px;
+}
+
+.box {
+    padding: 40px;
+    width: 500px;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.5);
+}

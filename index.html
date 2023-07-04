@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Schauspieler Quiz</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="container d-flex align-items-center justify-content-center">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="box bg-dark position-relative">
+
+                <div class="badge-container">
+                    <span id="question-count" class="badge rounded-pill text-white text-bg-primary">Frage 1</span>
+                </div>
+                
+                <h1>Schauspieler Quiz</h1>
+                <p id="question-text">Wie heißt der gezeigte Schauspieler?</p>
+                <img src="public/img/dwayne-johnson.png" id="quiz-image" class="img-fluid rounded-3">
+
+                <div class="container pt-4 overflow-hidden text-center">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <input id="btn-1" class="btn btn-primary w-100" type="submit" value="Option 1">
+                        </div>
+                        <div class="col-6">
+                            <input id="btn-2" class="btn btn-primary w-100" type="submit" value="Option 2">
+                        </div>
+                        <div class="col-6">
+                            <input id="btn-3" class="btn btn-primary w-100" type="submit" value="Option 3">
+                        </div>
+                        <div class="col-6">
+                            <input id="btn-4" class="btn btn-primary w-100" type="submit" value="Option 4">
+                        </div>
+                    </div>
+                    <div id="next-div" class="col-12 pt-4">
+                        <input id="next-btn" class="btn btn-light w-100" type="submit" value="Weiter">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
