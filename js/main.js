@@ -56,7 +56,6 @@
 
         nextButton.disabled = true;
         nextDiv.classList.add('d-none');
-
         showQuestion();
     }
 
