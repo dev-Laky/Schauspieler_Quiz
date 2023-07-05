@@ -36,25 +36,37 @@
     const questionCount = document.getElementById('question-count');
     const nextDiv = document.getElementById('next-div');
 
+    const optionRow = document.getElementById('option-row');
+
     let currentQuestionIndex = 0;
+    let currentQuestion;
+    let correctIndex = -1;
+    let correctButton;
     let score = 0;
 
     function startQuiz() {
         currentQuestionIndex = 0;
         score = 0;
+
+        // Enable all buttons for the next question
+        btn1.disabled = false;
+        btn2.disabled = false;
+        btn3.disabled = false;
+        btn4.disabled = false;
+
+        nextButton.disabled = true;
         nextDiv.classList.add('d-none');
-        showQuestion(0);
+
+        showQuestion();
     }
 
     function showQuestion() {
-        let currentQuestion = questions[currentQuestionIndex];
-        console.log(questions[currentQuestionIndex]);
+        currentQuestion = questions[currentQuestionIndex];
         let questionNumber = currentQuestionIndex + 1;
         questionCount.innerHTML = `Frage ${questionNumber}`;
         questionText.innerHTML = currentQuestion.question;
         quizImage.src = `public/img/${currentQuestion.img_src}`;
 
-        let correctIndex = -1;
         let answerIndex = 1;
         currentQuestion.answers.forEach(answer => {
             if (answer.correct === true) {
@@ -64,12 +76,6 @@
             btn.value = answer.text;
             answerIndex++;
         });
-
-        // remove event listeners to the buttons
-        btn1.removeEventListener('click', handleButtonClick);
-        btn2.removeEventListener('click', handleButtonClick);
-        btn3.removeEventListener('click', handleButtonClick);
-        btn4.removeEventListener('click', handleButtonClick);
 
         // Add event listeners to the buttons
         btn1.addEventListener('click', handleButtonClick);
@@ -81,6 +87,12 @@
 
         // Event handler for button click
         function handleButtonClick(event) {
+
+            // remove event listeners from the buttons
+            btn1.removeEventListener('click', handleButtonClick);
+            btn2.removeEventListener('click', handleButtonClick);
+            btn3.removeEventListener('click', handleButtonClick);
+            btn4.removeEventListener('click', handleButtonClick);
 
             // Disable all buttons
             btn1.disabled = true;
@@ -100,7 +112,6 @@
             const buttonNumber = parseInt(clickedButton.id.split('-')[1], 10);
 
             if (buttonNumber === correctIndex) {
-                console.log("success", buttonNumber, correctIndex);
                 score++;
 
                 // Replace the color of the clicked button
@@ -108,7 +119,6 @@
                 clickedButton.classList.add('btn-success'); // Add the new color class
 
             } else {
-                console.log("failure", buttonNumber, correctIndex);
 
                 // Replace the color of the clicked button
                 clickedButton.classList.remove('btn-primary'); // Remove the current color class
@@ -118,17 +128,18 @@
                 correctButton.classList.remove('btn-primary');
                 correctButton.classList.add('btn-success');
 
-                // Show the next button
-                nextDiv.classList.remove('d-none');
             }
 
             // Show the next button
             nextDiv.classList.remove('d-none');
 
-            nextButton.removeEventListener('click', nextButtonClick);
             nextButton.addEventListener('click', nextButtonClick);
 
             function nextButtonClick(event) {
+
+                // remove event listeners from the next button
+                nextButton.removeEventListener('click', nextButtonClick);
+
                 // reset correct button
                 correctButton.classList.remove('btn-success');
                 correctButton.classList.add('btn-primary');
@@ -138,7 +149,11 @@
                 clickedButton.classList.remove('btn-success');
                 clickedButton.classList.add('btn-primary');
 
-                nextQuestion();
+                if (currentQuestionIndex < questions.length - 1) {
+                    nextQuestion();
+                } else {
+                    showScore();
+                }
             }
         }
     }
@@ -157,6 +172,38 @@
         nextDiv.classList.add('d-none');
 
         showQuestion();
+    }
+
+    function showScore() {
+
+        optionRow.classList.add('d-none');
+
+        questionCount.innerHTML = `Ergebnis`;
+        questionText.innerHTML = `Du hast ${score} von ${questions.length} Fragen richtig.`;
+        quizImage.src = 'public/img/finish.gif';
+
+        nextDiv.classList.remove('d-none');
+        nextButton.classList.remove('d-none');
+        nextButton.disabled = false;
+
+        nextButton.value = 'Neustart';
+        nextButton.classList.remove('btn-light');
+        nextButton.classList.add('btn-warning');
+
+        nextButton.addEventListener('click', restartButtonClick);
+
+        function restartButtonClick(event) {
+
+            nextButton.removeEventListener('click', restartButtonClick);
+
+            optionRow.classList.remove('d-none');
+
+            nextButton.value = 'Weiter';
+            nextButton.classList.remove('btn-warning');
+            nextButton.classList.add('btn-light');
+
+            startQuiz();
+        }
     }
 
     startQuiz();
