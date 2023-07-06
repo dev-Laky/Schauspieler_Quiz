@@ -19,8 +19,8 @@ Dafür wird ein einfaches Projekt verwendet, um ein einfaches Beispiel zu liefer
 
 Contributors names and contact info
 
-ex. Louis Kauer  
-ex. [@24Kauer](mailto:24Kauer@kopernikusgymnasium.de)
+Louis Kauer  
+[@24Kauer](mailto:24Kauer@kopernikusgymnasium.de)
 
 ## Version History
 
