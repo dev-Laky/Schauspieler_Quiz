@@ -21,6 +21,206 @@
                 { text: "Dwayne Johnson", correct: true },
                 { text: "Laurence Fishburne", correct: false }
             ]
+        },
+        {
+            img_src: "5eb7e787471d4.jpg",
+            question: "Was ist der berühmteste Film von Tom Hanks?",
+            answers: [
+                { text: "Forest Pump", correct: false },
+                { text: "Forst Gump", correct: false },
+                { text: "Forrest Gump", correct: true },
+                { text: "Forest Gump", correct: false }
+            ]
+        },
+        {
+            img_src: "Blade.jpg",
+            question: "Was für eine Wesen ist Blade im gleichnamigen Film?",
+            answers: [
+                { text: "Halb Mensch, halb Gott", correct: false },
+                { text: "Ganz Mensch", correct: false },
+                { text: "Halb Mensch, halb Dämon", correct: false },
+                { text: "Halb Mensch, halb Vampir", correct: true }
+            ]
+        },
+        {
+            img_src: "Bild Schauspieler (3).jpg",
+            question: "Wie heißt diese Schauspielerin?",
+            answers: [
+                { text: "Danielle Rose Russel", correct: true },
+                { text: "Emma Watson", correct: false },
+                { text: "Zendaya", correct: false },
+                { text: "Danielle Campbell", correct: false }
+            ]
+        },
+        {
+            img_src: "aaron-paul--sein-tochterchen-kann-jederzeit-kommen-img-690245-0-8-1000x563.jpeg",
+            question: "Mit wie vielen Jahren fing Aaron Paul mit dem Schauspielern an?",
+            answers: [
+                { text: "mit 24 Jahren", correct: false},
+                { text: "mit 17 Jahren", correct: true },
+                { text: "mit 22", correct: false },
+                { text: "mit 19", correct: false }
+            ]
+        },
+        {
+            img_src: "Tom Cruise.jpg",
+            question: "Durch welchen dieser Filme wurde Tom Cruise bekannt?",
+            answers: [
+                { text: "Rain Man", correct: false },
+                { text: "Mission Impossible ", correct: false },
+                { text: "Top Gun", correct: false },
+                { text: "Jerry Maguire", correct: true }
+            ]
+        },
+        {
+            img_src: "john-cena-das-ist-das-heldenhafteste-was-er-je-getan-hat.jpg",
+            question: "Wo wurde John Cena geboren?",
+            answers: [
+                { text: "West Newbury, Massachusetts", correct: true },
+                { text: "Haverfordwest, Pembrokeshire, Wales", correct: false },
+                { text: "Boston, Massachusetts", correct: false },
+                { text: "Washington, D.C.", correct: false }
+            ]
+        },
+        {
+            img_src: "olivia-rodrigo.jpg",
+            question: "Wie groß ist Olivia Rodrigo?",
+            answers: [
+                { text: "1,65m", correct: true },
+                { text: "1,58m", correct: false },
+                { text: "1,73m", correct: false },
+                { text: "1,49m", correct: false }
+            ]
+        },
+        {
+            img_src: "walt-disney.jpg",
+            question: "Wann ist walt Disney gestorben?",
+            answers: [
+                { text: "30. April 1945", correct: false },
+                { text: "15. Dezember 1966", correct: true },
+                { text: "Gar nicht", correct: false },
+                { text: "31.August.1999", correct: false }
+            ]
+        },
+        {
+            img_src: "MV5BMTkxMzk2MDkwOV5BMl5BanBnXkFtZTcwMDAxODQwMg@@._V1_.jpg",
+            question: "Wie alt ist Jason Statham?",
+            answers: [
+                { text: "50 Jahre", correct: false },
+                { text: "45 Jahre", correct: false },
+                { text: "55 Jahre", correct: true },
+                { text: "53 Jahre", correct: false }
+            ]
+        },
+        {
+            img_src: "robert.png",
+            question: "In wie vielen Filmen hat Robert Downey Jr. mitgespielt?",
+            answers: [
+                { text: "102", correct: false },
+                { text: "13", correct: false },
+                { text: "29", correct: false },
+                { text: "83", correct: true }
+            ]
+        },
+        {
+            img_src: "ChrisHemsworth.jpg",
+            question: "In welchem Film/welcher TV-Serie trat Chris Hemsworth erstmals auf?",
+            answers: [
+                { text: "Guinevere Jones", correct: true },
+                { text: "Tyler Rake: Extraction", correct: false },
+                { text: "Bad Times at the El Royale", correct: false },
+                { text: "Star Trek – Next Generation", correct: false }
+            ]
+        },
+        {
+            img_src: "Rambo.jpg",
+            question: "Wer spielt Rambo im gleichnamigen Film?",
+            answers: [
+                { text: "Arnold Schwarzenegger", correct: false },
+                { text: "Tom Hanks", correct: false },
+                { text: "Sylvester Stallone", correct: true },
+                { text: "Brad Pitt", correct: false }
+            ]
+        },
+        {
+            img_src: "Minion.png",
+            question: "Wie heißt er?",
+            answers: [
+                { text: "Gru", correct: false },
+                { text: "Mark", correct: false },
+                { text: "Kevin", correct: true },
+                { text: "Guido", correct: false }
+            ]
+        },
+        {
+            img_src: "ArnoldSchwarzenegger.jpg",
+            question: "Arnold Schwarzenegger ist ehemaliger G8ouverneur von welchem US-Bundesstaat?",
+            answers: [
+                { text: "Kalifornien", correct: true },
+                { text: "Colorado", correct: false },
+                { text: "Arkansas", correct: false },
+                { text: "Arizona", correct: false }
+            ]
+        },
+        {
+            img_src: "Til_Schweigerjpg.jpg",
+            question: "Wo wurde Til Schweiger geboren?",
+            answers: [
+                { text: "Berlin", correct: false },
+                { text: "Köln", correct: false },
+                { text: "Freiburg", correct: true },
+                { text: "Ingolstadt", correct: false }
+            ]
+        },
+        {
+            img_src: "2265ccc3e85215843e55f38b5a7cdaf5,8321f2dd.jpg",
+            question: "Wann wurde Robert Downey jr geboren?",
+            answers: [
+                { text: "04. April 1965", correct: true },
+                { text: "22. März 1972", correct: false },
+                { text: "29. 02 1968", correct: false },
+                { text: "20. April 2024", correct: false }
+            ]
+        },
+        {
+            img_src: "Leon.jpg",
+            question: "Was ist Leon?",
+            answers: [
+                { text: "der Lehrer", correct: false },
+                { text: "der Profi", correct: true},
+                { text: "der Klempner", correct: false},
+                { text: "der Böse", correct: false}
+            ]
+        },
+        {
+            img_src: "3918779.webp",
+            question: "Welcher Schauspieler hat die meisten Oscars gewonnen?",
+            answers: [
+                { text: "Jackie Chan", corret: false},
+                { text: "Vin Diesel", correct: false},
+                { text: "Robert Downey Jr", correct: true},
+                { text: "Bruce Willis", correct: false}
+            ]
+        },
+        {
+            img_src: "c41d1b0ee3d968f0fef927a445_YyAxMzkweDc4Mis5NiszAnJlIDE5MjAgMTA4MANjMmNkMDM2MGY3NA==.jpg",
+            question: "Welcher dieser Schauspieler spielten alle den selben Charakter ?",
+            answers: [
+                { text: "Andrew Garfield; Tobey Maguire; Tom Holland", correct: true },
+                { text: "Tom Holland; Robert Downey; Chadwick Boseman", correct: false },
+                { text: "Zendaya; Chris Hemsworth; Jarent Leto", correct: false },
+                { text: "Ryan Gosling; Bruce Willis; Emma Watson", correct: false }
+            ]
+        },
+        {
+            img_src: "5eb7e787471d4.jpg",
+            question: "Was ist der berühmteste Film von Tom Hanks??",
+            answers: [
+                { text: "Forest Pump", correct: false },
+                { text: "Forst Gump", correct: false },
+                { text: "Forrest Gump", correct: true },
+                { text: "Forest Gump", correct: false }
+            ]
         }
     ];
 
