@@ -103,17 +103,7 @@
             ]
         },
         {
-            img_src: "MV5BMTkxMzk2MDkwOV5BMl5BanBnXkFtZTcwMDAxODQwMg@@._V1_.jpg",
-            question: "Wie alt ist Jason Statham?",
-            answers: [
-                { text: "50 Jahre", correct: false },
-                { text: "45 Jahre", correct: false },
-                { text: "55 Jahre", correct: true },
-                { text: "53 Jahre", correct: false }
-            ]
-        },
-        {
-            img_src: "robert.png",
+            img_src: "robert.jpg",
             question: "In wie vielen Filmen hat Robert Downey Jr. mitgespielt?",
             answers: [
                 { text: "102", correct: false },
@@ -123,7 +113,7 @@
             ]
         },
         {
-            img_src: "ChrisHemsworth.jpg",
+            img_src: "chris_hemsworth.webp",
             question: "In welchem Film/welcher TV-Serie trat Chris Hemsworth erstmals auf?",
             answers: [
                 { text: "Guinevere Jones", correct: true },
@@ -154,7 +144,7 @@
         },
         {
             img_src: "ArnoldSchwarzenegger.jpg",
-            question: "Arnold Schwarzenegger ist ehemaliger G8ouverneur von welchem US-Bundesstaat?",
+            question: "Arnold Schwarzenegger ist ehemaliger Gouverneur von welchem US-Bundesstaat?",
             answers: [
                 { text: "Kalifornien", correct: true },
                 { text: "Colorado", correct: false },
@@ -163,7 +153,7 @@
             ]
         },
         {
-            img_src: "Til_Schweigerjpg.jpg",
+            img_src: "till_schweiger.jpg",
             question: "Wo wurde Til Schweiger geboren?",
             answers: [
                 { text: "Berlin", correct: false },
@@ -173,7 +163,7 @@
             ]
         },
         {
-            img_src: "2265ccc3e85215843e55f38b5a7cdaf5,8321f2dd.jpg",
+            img_src: "robert.jpg",
             question: "Wann wurde Robert Downey jr geboren?",
             answers: [
                 { text: "04. April 1965", correct: true },
@@ -212,16 +202,6 @@
                 { text: "Ryan Gosling; Bruce Willis; Emma Watson", correct: false }
             ]
         },
-        {
-            img_src: "5eb7e787471d4.jpg",
-            question: "Was ist der berühmteste Film von Tom Hanks??",
-            answers: [
-                { text: "Forest Pump", correct: false },
-                { text: "Forst Gump", correct: false },
-                { text: "Forrest Gump", correct: true },
-                { text: "Forest Gump", correct: false }
-            ]
-        }
     ];
 
 
