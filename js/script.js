@@ -46,7 +46,7 @@
             img_src: "aaron-paul--sein-tochterchen-kann-jederzeit-kommen-img-690245-0-8-1000x563.jpeg",
             question: "Mit wie vielen Jahren fing Aaron Paul mit dem Schauspielern an?",
             answers: [
-                { text: "mit 24 Jahren", correct: false},
+                { text: "mit 24 Jahren", correct: false },
                 { text: "mit 17 Jahren", correct: true },
                 { text: "mit 22", correct: false },
                 { text: "mit 19", correct: false }
@@ -167,19 +167,19 @@
             question: "Was ist Leon?",
             answers: [
                 { text: "der Lehrer", correct: false },
-                { text: "der Profi", correct: true},
-                { text: "der Klempner", correct: false},
-                { text: "der Böse", correct: false}
+                { text: "der Profi", correct: true },
+                { text: "der Klempner", correct: false },
+                { text: "der Böse", correct: false }
             ]
         },
         {
             img_src: "3918779.webp",
             question: "Welcher Schauspieler hat die meisten Oscars gewonnen?",
             answers: [
-                { text: "Jackie Chan", corret: false},
-                { text: "Vin Diesel", correct: false},
-                { text: "Robert Downey Jr", correct: true},
-                { text: "Bruce Willis", correct: false}
+                { text: "Jackie Chan", corret: false },
+                { text: "Vin Diesel", correct: false },
+                { text: "Robert Downey Jr", correct: true },
+                { text: "Bruce Willis", correct: false }
             ]
         },
         {
@@ -192,6 +192,16 @@
                 { text: "Ryan Gosling; Bruce Willis; Emma Watson", correct: false }
             ]
         },
+        {
+            img_src: "green-lantern.avif",
+            question: "Wie heißt der Schauspieler, welcher Green Lantern verkörpert?",
+            answers: [
+                { text: "Peter Sarsgaard", correct: true },
+                { text: "Tom Holland", correct: false },
+                { text: "Ryan Reynolds", correct: true },
+                { text: "Mike Doyle", correct: false }
+            ]
+        }
     ];
 
 
