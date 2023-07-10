@@ -43,16 +43,6 @@
             ]
         },
         {
-            img_src: "Bild Schauspieler (3).jpg",
-            question: "Wie heißt diese Schauspielerin?",
-            answers: [
-                { text: "Danielle Rose Russel", correct: true },
-                { text: "Emma Watson", correct: false },
-                { text: "Zendaya", correct: false },
-                { text: "Danielle Campbell", correct: false }
-            ]
-        },
-        {
             img_src: "aaron-paul--sein-tochterchen-kann-jederzeit-kommen-img-690245-0-8-1000x563.jpeg",
             question: "Mit wie vielen Jahren fing Aaron Paul mit dem Schauspielern an?",
             answers: [
@@ -68,8 +58,8 @@
             answers: [
                 { text: "Rain Man", correct: false },
                 { text: "Mission Impossible ", correct: false },
-                { text: "Top Gun", correct: false },
-                { text: "Jerry Maguire", correct: true }
+                { text: "Top Gun", correct: true },
+                { text: "Jerry Maguire", correct: false }
             ]
         },
         {
